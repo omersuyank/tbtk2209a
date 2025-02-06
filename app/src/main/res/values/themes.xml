@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Tubitak2209" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+
+        <!-- Ana Renkler -->
+        <item name="colorPrimary">@color/buttonColor</item>
+
+
+        <!-- Metin ve Bileşen Renkleri -->
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:colorButtonNormal">@color/buttonColor</item>
+
+        <!-- Ripple Efekti -->
+        <item name="android:colorControlHighlight">@color/buttonRipple</item>
+    </style>
+</resources>

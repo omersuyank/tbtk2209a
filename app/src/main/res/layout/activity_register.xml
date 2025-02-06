@@ -1,0 +1,134 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback">
+
+    <!-- İçerik Alanı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/blurred_background">
+
+        <!-- Başlık -->
+        <TextView
+            android:id="@+id/registerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- İsim Alanı -->
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ad Soyad"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_input"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- E-Posta Alanı -->
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-Posta"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_input"
+            android:padding="15dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Telefon Numarası Alanı -->
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefon Numarası"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_input"
+            android:padding="15dp"
+            android:inputType="phone"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Şifre Alanı -->
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Şifre"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_input"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Rol Seçimi (Öğrenci / Eğitmen) -->
+        <TextView
+            android:id="@+id/roleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Türü:"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/roleGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/radioStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Öğrenci"
+                android:textColor="@android:color/white"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eğitmen"
+                android:textColor="@android:color/white"/>
+        </RadioGroup>
+
+        <!-- Eğitmen Kayıt Kodu Alanı (Sadece Eğitmenler İçin Görünecek) -->
+        <EditText
+            android:id="@+id/teacherInviteCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Eğitmen Davet Kodu"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_input"
+            android:padding="15dp"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/> <!-- Varsayılan olarak gizli -->
+
+        <!-- Kayıt Ol Butonu -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

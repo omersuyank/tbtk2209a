@@ -1,0 +1,16 @@
+<resources>
+    <color name="backgroundColor">#F8F9FA</color> <!-- Açık Mod Arka Plan -->
+    <color name="darkBackground">#121212</color> <!-- Koyu Mod Arka Plan -->
+
+    <!-- Metin ve İçerik Renkleri -->
+    <color name="textPrimary">#2C3E50</color> <!-- Açık Mod Metin Rengi -->
+    <color name="hintColor">#B0B0B0</color> <!-- Açık Mod Hint Rengi -->
+
+    <!-- Buton ve Ripple Renkleri -->
+    <color name="buttonColor">#1375D5</color> <!-- Buton Rengi -->
+    <color name="buttonRipple">#801E88E5</color> <!-- Ripple Efekti -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="hintDarkMode">#888888</color>
+
+</resources>
